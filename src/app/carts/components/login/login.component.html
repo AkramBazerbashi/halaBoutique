@@ -1,0 +1,16 @@
+<div class="form" *ngIf="!validLogin">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Your Full Name</mat-label>
+        <input matInput type="text" [formControl]="name" [(ngModel)]="data.name" >
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Your Phone</mat-label>
+        <input matInput type="phone" [formControl]="phone" [(ngModel)]="data.phone" >
+      </mat-form-field>
+    <!-- <input type="button" value="Login" (click)=login()> -->
+
+    <div mat-dialog-actions>
+        <button class="cancel" mat-button (click)="onNoClick()">No Thanks</button>
+        <button class="ok" mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+      </div>
+</div>

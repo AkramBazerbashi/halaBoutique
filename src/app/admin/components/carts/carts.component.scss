@@ -1,0 +1,110 @@
+
+
+.cartBox{
+    background-color: #FAE5F6;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: 500px;
+
+}
+
+.view{
+    background-color: #9FBCC2;
+    color:#FAE5F6;
+    &:hover{
+        background-color: #b9dde4;
+    }
+    margin-left: 30px
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    // height: 150px;
+    min-height: 500px;
+    margin: 100px auto;
+    background-color: #c0d4d8;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .login{
+    background-color: #9FBCC2;
+    color:#FAE5F6;
+    border: none;
+    padding: 16px;
+    border-radius: 4px;
+    &:hover{
+        background-color: #b9dde4;
+    }
+}
+
+
+@media (max-width:720px){
+    .form{
+        width: 70% !important;
+        mat-label{
+            font-size: 12px;
+        }
+        input{
+            font-size: 12px;
+        }
+    }
+    .cartBox{
+        min-height: 562px;
+        
+    }
+    table{
+        font-size: 12px;
+        button{
+            font-size: 12px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.hide{
+    background-color: transparent !important;
+    border: none;
+    
+}
+
+
+
+
+
+@media (max-width:380px){
+    .form{
+        mat-label{
+            font-size: 10px;
+        }
+        input{
+            font-size: 10px;
+        }
+    }
+    .cartBox{
+        min-height: 562px;
+        
+    }
+    table{
+        font-size: 10px;
+        button{
+            font-size: 10px;
+            margin-left: 5px;
+        }
+    }
+}

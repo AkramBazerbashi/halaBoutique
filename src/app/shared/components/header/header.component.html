@@ -1,0 +1,66 @@
+<nav>
+    <div class="container">
+        <div class="content">
+            <div class="logoBox">
+                <img routerLink="/products" class="imgLogo" src="assets/logo.jpg" alt="">
+                <h2 routerLink="/products" class="logo"><span>Hala </span> Boutique</h2>
+            </div>
+            <ul>
+                <li >
+                    <a routerLink="/products" id="productsAnch" href="">
+                        <fa-icon class="faStore" [icon]="faStore"></fa-icon>
+                        Products
+                    </a>
+                    <div class="underline underline1">
+                        <div class="left">
+                            <div class="leftLine"></div>
+                        </div>
+                        <div class="right">
+                            <div class="rightLine"></div>
+                        </div>
+                    </div>
+                </li>
+                <li >
+                    
+                    <a routerLink="/cart" id="cartAnch" href="">
+                        <!-- <fa-icon matBadge="15" matBadgeColor="warn" class="faCartShopping" [icon]="faCartShopping"></fa-icon> -->
+                        <mat-icon matBadge="{{cardSize}}" matBadgeSize="small" matBadgeColor="warn">shopping_cart</mat-icon>
+                        Cart
+                    </a>
+                    <div class="underline underline2">
+                        <div class="left">
+                            <div class="leftLine"></div>
+                        </div>
+                        <div class="right">
+                            <div class="rightLine"></div>
+                        </div>
+                    </div>
+                </li>
+                <li >
+                    <a routerLink="/admin" id="adminAnch" href="">
+                        <fa-icon class="faUser" [icon]="faUser"></fa-icon>
+                        Support
+                    </a>
+                    <div class="underline underline3">
+                        <div class="left">
+                            <div class="leftLine"></div>
+                        </div>
+                        <div class="right">
+                            <div class="rightLine"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="right">
+                <ul>
+                    <li><a href="https://www.facebook.com/hala.boutiqu.5">
+                        <fa-icon [icon]="faFacebook"></fa-icon>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/hala.boutique7/">
+                        <fa-icon [icon]="faInstagram"></fa-icon>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,23 @@
+<div class="cartBox">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Price</th>
+                <th style="width: 25%;">Quantity</th>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr *ngFor="let item of data; let index = index" >
+                <td><img src="{{item.item.image[0]}}" alt=""></td>
+                <td>{{item.item.title}}</td>
+                <td>{{item.item.price}} L.E</td>
+                <td>
+                    {{item.quantity}}
+                </td>
+            </tr>
+        </tbody> 
+    </table>
+    
+</div>
